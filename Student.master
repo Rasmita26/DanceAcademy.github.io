@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Student.master.cs" Inherits="Student" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>Dance Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dance whirl Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link rel="stylesheet" href="css/main-gallery.css" type="text/css" media="screen" />  <!-- flexslider-CSS --> 
+<link href="css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
+<!-- //Custom Theme files --> 
+<!-- web-fonts -->  
+<link href="http://localhost:20262/fonts.googleapis.com/css?family=Arapey:400,400i" rel="stylesheet">
+<link href="http://localhost:20262/fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,400i,600,600i,700" rel="stylesheet">
+<!-- //web-fonts -->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body style="background-image:url('images/dance1.jpg')" >  
+    
+    <form id="form1" runat="server">
+	
+		<div class="header-w3layouts"> 
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Spirit soul dancing</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a class="navbar-brand" href="Home.aspx"><p style="font-family:'AR BLANCA';color:#00ff99">Spirit soul dancing</p></a></h1>
+					</div> 
+				
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="Home1.aspx">HOME</a></li>
+							<li><a href="Event1.aspx">EVENT</a></li>
+                            <li><a href="Classes1.aspx">CLASSES</a></li>
+							<li><a href="Instructors1.aspx">INSTRUCTORS</a></li>
+							<li><a href="Gallery1.aspx">GALLERY</a></li>
+                            <li><a href="Logout.aspx">LOGOUT</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>  
+		</div>	
+                 
+        <asp:Panel ID="Panel1" runat="server" Height="334px" style="margin-left: 187px; margin-right: 110px; margin-top: 152px" Width="506px">
+         
+            <div>
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+               </asp:ContentPlaceHolder>
+            </div>
+
+        </asp:Panel>
+    </form>
+    <!-- footer -->
+			<div class="copy-right">
+				<p>&copy; 2020 Spirit soul dancing. All rights reserved </p>
+			</div>
+			
+<!-- //footer -->
+</body>
+</html>
+
